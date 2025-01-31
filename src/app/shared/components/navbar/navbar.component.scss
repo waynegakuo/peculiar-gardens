@@ -1,0 +1,98 @@
+$text-color: #828282;
+
+.pg-desktop-navbar {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+}
+
+.pg-left-navbar,
+.pg-right-navbar {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.pg-left-navbar > a {
+  text-decoration: none;
+  letter-spacing: .3px;
+  color: $text-color;
+  font-size: 16px;
+  padding: 0 8px;
+  line-height: 24px;
+  vertical-align: middle;
+  margin-left: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.pg-left-navbar > a::after {
+  content: "";
+  background-color: #2A9763;
+  position: absolute;
+  left: 0;
+  bottom: -18px;
+  height: 2px;
+  width: 100%;
+  opacity: 0;
+  transition: transform 0.2s ease;
+}
+
+.pg-left-navbar > a:hover::after {
+  transform: translateY(-15px);
+  opacity: 1;
+}
+
+.pg-auth-btn {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  outline: $text-color;
+  border: 2px solid $text-color;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $text-color;
+    color: #fff; /* Change the text color to white */
+  }
+}
+
+.pg-burger {
+  border: 0;
+  background-color: transparent;
+  color: inherit;
+  font-size: 20px;
+  display: none;
+}
+
+.pg-burger:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 767.98px) {
+  .pg-desktop-navbar {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px 20px;
+  }
+
+  .pg-left-navbar > a {
+    display: none;
+  }
+
+  .pg-auth-btn {
+    display: none;
+  }
+
+  .pg-burger {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pg-desktop-navbar {
+    width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

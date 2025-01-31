@@ -1,1 +1,87 @@
 /* You can add global styles to this file, and also import other style files */
+@use "tailwindcss";
+@use "../public/assets/peculiar-styles/montserrat-alt.scss";
+@use "../public/assets/peculiar-styles/raleway";
+
+body {
+  background-color: #fff;
+  padding-left: 144px;
+  padding-right: 144px;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+$primary-color: #2A9763;
+$secondary-color: #38C984;
+$text-color: #828282;
+
+.pg-c-primary {
+  color: $primary-color
+}
+
+.pg-c-secondary {
+  color: $secondary-color
+}
+
+.pg-primary-btn,
+.pg-secondary-btn,
+.pg-transparent-btn {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  width: 200px;
+}
+
+.pg-primary-btn {
+  outline: $primary-color;
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
+}
+
+.pg-primary-btn:hover {
+  background-color: $secondary-color;
+}
+
+.pg-secondary-btn {
+  outline: $secondary-color;
+  background-color: $secondary-color;
+  color: #fff;
+  border: none;
+}
+
+.pg-secondary-btn:hover {
+  background-color: $primary-color;
+}
+
+.pg-transparent-btn {
+  outline: $secondary-color;
+  background-color: transparent;
+  color: $secondary-color;
+  border: 1px solid $secondary-color;
+}
+
+.pg-transparent-btn:hover {
+  background-color: $secondary-color;
+  color: #fff;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  body {
+    padding: 0;
+  }
+
+  .pg-primary-btn, .pg-secondary-btn, .pg-transparent-btn {
+    width: 150px
+  }
+
+}

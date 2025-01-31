@@ -1,0 +1,151 @@
+.raleway-thin {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+}
+
+.raleway-light {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+.raleway-regular {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+.raleway-medium {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+.raleway-semi-bold {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+.raleway-bold {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+.raleway-extra-bold {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+}
+
+.raleway-black {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+}
+
+.raleway-thin-italic {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.raleway-light-italic {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.raleway-regular-italic {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.raleway-medium-italic {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.raleway-semi-bold-italic {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.raleway-bold-italic {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.raleway-extra-bold-italic {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.raleway-black-italic {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pg-ral-thin {
+  @extend .raleway-thin;
+}
+
+.pg-ral-light {
+  @extend .raleway-light;
+}
+
+.pg-ral-regular {
+  @extend .raleway-regular;
+}
+
+.pg-ral-medium {
+  @extend .raleway-medium;
+}
+
+.pg-ral-semi-bold {
+  @extend .raleway-semi-bold;
+}
+
+.pg-ral-bold {
+  @extend .raleway-bold;
+}
+
+.pg-ral-extra-bold {
+  @extend .raleway-extra-bold;
+}
+
+.pg-ral-black {
+  @extend .raleway-black;
+}
+
+.pg-ral-thin-italic {
+  @extend .raleway-thin-italic;
+}
+
+.pg-ral-light-italic {
+  @extend .raleway-light-italic;
+}
+
+.pg-ral-regular-italic {
+  @extend .raleway-regular-italic;
+}
+
+.pg-ral-medium-italic {
+  @extend .raleway-medium-italic;
+}
+
+.pg-ral-semi-bold-italic {
+  @extend .raleway-semi-bold-italic;
+}
+
+.pg-ral-bold-italic {
+  @extend .raleway-bold-italic;
+}
+
+.pg-ral-extra-bold-italic {
+  @extend .raleway-extra-bold-italic;
+}
+
+.pg-ral-black-italic {
+  @extend .raleway-black-italic;
+}
