@@ -1,0 +1,227 @@
+
+.pc-shopping-product {
+  box-shadow: 0 0 1.5px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  min-height: 295px;
+  width: 175px;
+  position: relative;
+  padding: 10px;
+}
+
+.pc-shopping-product-content,
+.pc-shopping-product-dialog-details-note-item,
+.pc-shopping-product-dialog-details-footer,
+.pc-shopping-product-dialog-circle-btn {
+  display: flex;
+  align-items: center;
+}
+
+.pc-shopping-product-content {
+  cursor: pointer;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  flex: 1;
+  height: 100%;
+}
+
+.pc-shopping-product-title {
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--pc-shade-3);
+  text-transform: capitalize;
+}
+
+.pc-shopping-product-partner {
+  font-weight: 700;
+  font-size: 9px;
+  text-decoration-line: underline;
+  color: var(--pc-shade-cart);
+  text-align: left;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.pc-shopping-product-price {
+  font-weight: 800;
+  font-size: 14px;
+  color: #4d4d4d;
+}
+
+.pc-shopping-product-image {
+  border-radius: 4px;
+  height: 145px;
+  align-items: center;
+  max-width: 155px;
+  object-fit: scale-down;
+  width: 100%;
+}
+
+.pc-shopping-product-dialog-content {
+  display: flex;
+  gap: 30px;
+}
+
+.pc-shopping-product-dialog-image {
+  display: block;
+  border-radius: 8px;
+  height: 382px;
+  object-fit: contain;
+  width: 382px;
+}
+
+.pc-shopping-product-dialog-details {
+  flex: 1;
+  max-height: 382px;
+  overflow: auto;
+  width: 100%;
+}
+
+.pc-shopping-product-dialog-details-partner {
+  color: var(--pc-shade-2);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 10.5px;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+.pc-shopping-product-dialog-details-partner:hover {
+  color: var(--primary-color);
+}
+
+.pc-shopping-product-dialog-details-title {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--pc-shade-5);
+  line-height: 1.2;
+  margin: 5px 0;
+  text-transform: capitalize;
+}
+
+.pc-shopping-product-dialog-details-price,
+.pc-shopping-product-dialog-details-desc {
+  font-weight: 900;
+  font-size: 13px;
+  color: var(--pc-shade-5);
+}
+
+.pc-shopping-product-dialog-details-price,
+.pc-shopping-product-dialog-details-discount {
+  //font-family: $f-family-satoshi-semi-bold;
+  color: var(--primary-color);
+  font-size: 24px;
+}
+
+.pc-shopping-product-dialog-details-discount {
+  font-size: 17px;
+  color: rgba(77, 77, 77, 0.5);
+  text-decoration: line-through;
+}
+
+.pc-shopping-product-dialog-details-desc {
+  font-weight: 500;
+  margin: 15px auto;
+  margin-top: 15px;
+}
+
+.pc-shopping-product-dialog-details-more {
+  color: var(--primary-color);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.pc-shopping-product-dialog-details-note {
+  background: var(--pc-bg-grey);
+  border-radius: 8px;
+  font-size: 12px;
+  min-height: 10px;
+  padding: 15px 20px;
+  margin: 0 auto;
+}
+
+.pc-shopping-product-dialog-details-note-item {
+  gap: 8px;
+  padding: 5px 0;
+}
+
+.pc-shopping-product-dialog-details-footer {
+  gap: 10px;
+  margin: 0 auto;
+  margin-top: 25px;
+  overflow: auto;
+}
+
+.pc-shopping-product-dialog-circle-btn {
+  background: var(--pc-color-extra);
+  border-radius: 50%;
+  justify-content: center;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+
+.pc-shopping-product-dialog-circle-btn:hover,
+.pc-shopping-product-liked {
+  background-color: var(--pc-primary-3);
+}
+
+.pc-shopping-product-actions {
+  button {
+    width: 100% !important;
+  }
+}
+
+/** Media Queries */
+@media screen and (max-width: 540px) {
+  .pc-shopping-product {
+    min-width: 145px;
+    max-width: 175px;
+    width: auto;
+  }
+
+  .pc-shopping-product-dialog-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pc-shopping-product-dialog-image {
+    height: auto;
+    max-height: 382px;
+    width: 100%;
+  }
+
+  .pc-shopping-product-dialog-details {
+    max-height: 100%;
+  }
+}
+
+/** Media Queries */
+@media screen and (min-width: 390px) and (max-width: 415px) {
+  .pc-shopping-product {
+    min-width: 165px;
+    max-width: 175px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .pc-shopping-product {
+    min-width: 135px;
+    width: 135px;
+    height: 300px;
+  }
+}
+
+/* Galaxy Fold */
+@media screen and (max-width: 280px) {
+  .pc-shopping-product {
+    min-width: 120px;
+    width: 120px;
+    height: 320px;
+  }
+}
