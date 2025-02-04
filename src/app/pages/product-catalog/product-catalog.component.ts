@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import {ProductComponent} from '../../shared/components/product/product.component';
 
 @Component({
-  selector: 'app-landing',
+  selector: 'app-product-catalog',
   imports: [ProductComponent],
-  templateUrl: './landing.component.html',
+  templateUrl: './product-catalog.component.html',
   standalone: true,
-  styleUrl: './landing.component.scss'
+  styleUrl: './product-catalog.component.scss'
 })
-export class LandingComponent {
+export class ProductCatalogComponent {
 
 }

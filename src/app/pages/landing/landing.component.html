@@ -25,3 +25,22 @@
     </div>
   </div>
 </section>
+
+<section>
+  <div class="pb-32">
+    <div class="pg-browse-products">
+      <div class="pg-browse-banner flex flex-col items-center">
+        <h1 class="pg-mont-black pg-hero-title pg-c-primary pt-16">Browse Product</h1>
+
+        <p class="pg-ral-medium py-12 text-center">Discover our wide range of products, carefully curated to meet your needs.
+          From vegetables to fruits, we have everything you need to have a healthy meal, straight from the farm.</p>
+
+        <div class="pg-browse-products-list">
+          @for (i of [1,2,3,4,5]; track i) {
+            <app-product></app-product>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
