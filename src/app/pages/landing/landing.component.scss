@@ -13,8 +13,14 @@
 
 .pg-browse-banner {
   background: var(--pc-bg-prime-gray);
-  border-radius: 8px;
+  border-radius: 2.625rem;
   padding: 24px 32px;
+
+  p {
+    font-size: 14px;
+    line-height: 16px;
+    width: 70%;
+  }
 }
 
 .pg-browse-products-list {

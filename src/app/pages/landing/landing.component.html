@@ -36,8 +36,8 @@
           From vegetables to fruits, we have everything you need to have a healthy meal, straight from the farm.</p>
 
         <div class="pg-browse-products-list">
-          @for (i of [1,2,3,4,5]; track i) {
-            <app-product></app-product>
+          @for (product of productMockData; track product.id) {
+            <app-product [productData]="product"></app-product>
           }
         </div>
       </div>

@@ -1,26 +1,27 @@
 <div class="pc-shopping-product">
   <div class="pc-shopping-product-content">
     <img
-      ngSrc="./assets/product/default_placeholder.svg"
+      [ngSrc]=productData.image
       width="48"
       height="48"
       class="pc-shopping-product-image"
-      alt="Product"
-      priority
+      [alt]=productData.name
       onerror="this.src = './assets/product/default_placeholder.svg'"/>
 
     <div class="pc-shopping-product-title pg-ral-regular">
-      Fresh Vegetables
+      {{productData.name}}
     </div>
 
     <div class="pc-shopping-product-price pg-mont-medium">
-      $12.99
+      Ksh. {{productData.price}}
     </div>
   </div>
 
   <div class="pc-shopping-product-actions">
-    <button class="pg-primary-btn pg-ral-regular flex justify-center">
+    <button (click)="addToCart()" class="pg-primary-btn pg-ral-regular flex justify-center">
       <mat-icon>add</mat-icon>
     </button>
   </div>
+
+  <p>{{productCount()}}</p>
 </div>
