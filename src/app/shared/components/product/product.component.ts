@@ -1,4 +1,4 @@
-import {Component, computed, Input, signal} from '@angular/core';
+import {Component, computed, input, Input, signal} from '@angular/core';
 import {NgOptimizedImage} from '@angular/common';
 import {MatIcon} from '@angular/material/icon';
 import {Product} from '../../../models/product.model';
@@ -14,7 +14,9 @@ import {Product} from '../../../models/product.model';
     styleUrl: './product.component.scss'
 })
 export class ProductComponent {
-  @Input() productData!: Product;
+  // @Input() productData!: Product;
+
+  productData = input<Product | null>();
 
   cartCount = signal(0);
   productCount = computed(() => this.cartCount());
@@ -22,4 +24,6 @@ export class ProductComponent {
   addToCart() {
     this.cartCount.update((count) => count + 1);
   }
+
+  protected readonly String = String;
 }
