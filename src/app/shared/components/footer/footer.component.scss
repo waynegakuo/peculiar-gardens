@@ -1,0 +1,24 @@
+.footer-section {
+  background-color: var(--pg-bg-black-alt);
+  color: var(--pc-shade-1);
+}
+.pg-footer {
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pg-footer-title {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.pg-useful-links-items {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  a {
+    text-decoration: none;
+  }
+}
