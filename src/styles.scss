@@ -3,24 +3,52 @@
 @use "../public/assets/peculiar-styles/montserrat-alt.scss";
 @use "../public/assets/peculiar-styles/raleway";
 
+:root {
+  --primary-color: #2A9763;
+  --secondary-color: #38C984;
+  --text-color: #828282;
+  --white: #fff;
+
+  --primary-color-rgba: rgba(42, 151, 99, 0.2);
+  --secondary-color-rgba: rgba(56, 201, 132, 0.2);
+
+  // Shades
+  --pc-shade-5: #000000;
+  --pc-shade-4: #222222;
+  --pc-shade-extra: #333333;
+  --pc-shade-cart: #808080;
+  --pc-shade-3: #4d4d4d;
+  --pc-shade-2: #9d9d9d;
+  --pc-shade-1: #ffffff;
+
+  // GRADIENT COLOR
+  --pc-gradient: linear-gradient(to right, #04a195, #b1e552);
+  --pc-bg-grey: #f2f2f2;
+  --pc-bg-secondary: rgba(0, 0, 0, 0.33);
+
+  // Extras
+  --pc-color-extra: rgba(0, 0, 0, 0.4);
+  --pc-bg-prime-gray: #F6F6F6;
+  --pg-bg-black-alt: #131313;
+
+}
+
+
 body {
   background-color: #fff;
-  padding-left: 144px;
-  padding-right: 144px;
+  //padding-left: 144px;
+  //padding-right: 144px;
   margin: 0;
   overflow-x: hidden;
 }
 
-$primary-color: #2A9763;
-$secondary-color: #38C984;
-$text-color: #828282;
 
 .pg-c-primary {
-  color: $primary-color
+  color: var(--primary-color);
 }
 
 .pg-c-secondary {
-  color: $secondary-color
+  color: var(--secondary-color);
 }
 
 .pg-primary-btn,
@@ -34,36 +62,36 @@ $text-color: #828282;
 }
 
 .pg-primary-btn {
-  outline: $primary-color;
-  background-color: $primary-color;
+  outline: var(--primary-color);
+  background-color: var(--primary-color);
   color: #fff;
   border: none;
 }
 
 .pg-primary-btn:hover {
-  background-color: $secondary-color;
+  background-color: var(--secondary-color);
 }
 
 .pg-secondary-btn {
-  outline: $secondary-color;
-  background-color: $secondary-color;
+  outline: var(--secondary-color);
+  background-color: var(--secondary-color);
   color: #fff;
   border: none;
 }
 
 .pg-secondary-btn:hover {
-  background-color: $primary-color;
+  background-color: var(--primary-color);
 }
 
 .pg-transparent-btn {
-  outline: $secondary-color;
+  outline: var(--secondary-color);
   background-color: transparent;
-  color: $secondary-color;
-  border: 1px solid $secondary-color;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
 }
 
 .pg-transparent-btn:hover {
-  background-color: $secondary-color;
+  background-color: var(--secondary-color);
   color: #fff;
 }
 
@@ -85,3 +113,6 @@ $text-color: #828282;
   }
 
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

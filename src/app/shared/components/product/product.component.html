@@ -1,0 +1,27 @@
+<div class="pc-shopping-product">
+  <div class="pc-shopping-product-content">
+    <img
+      [ngSrc]=String(productData()?.image)
+      width="48"
+      height="48"
+      class="pc-shopping-product-image"
+      [alt]=productData()?.name
+      onerror="this.src = './assets/product/default_placeholder.svg'"/>
+
+    <div class="pc-shopping-product-title pg-ral-regular">
+      {{productData()?.name}}
+    </div>
+
+    <div class="pc-shopping-product-price pg-mont-medium">
+      Ksh. {{productData()?.price}}
+    </div>
+  </div>
+
+  <div class="pc-shopping-product-actions">
+    <button (click)="addToCart()" class="pg-primary-btn pg-ral-regular flex justify-center">
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+
+  <p>{{productCount()}}</p>
+</div>
