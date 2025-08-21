@@ -1,7 +1,8 @@
-import {Component, computed, input, Input, signal} from '@angular/core';
+import {Component, computed, input, inject} from '@angular/core';
 import {NgOptimizedImage} from '@angular/common';
 import {MatIcon} from '@angular/material/icon';
 import {Product} from '../../../models/product.model';
+import {CartService} from '../../../services/cart.service';
 
 @Component({
     selector: 'app-product',
@@ -14,15 +15,27 @@ import {Product} from '../../../models/product.model';
     styleUrl: './product.component.scss'
 })
 export class ProductComponent {
-  // @Input() productData!: Product;
-
   productData = input<Product | null>();
+  private cartService = inject(CartService);
 
-  cartCount = signal(0);
-  productCount = computed(() => this.cartCount());
+  // Get quantity for this specific product
+  productQuantity = computed(() => {
+    const product = this.productData();
+    return product ? this.cartService.getProductQuantity(product.id) : 0;
+  });
 
   addToCart() {
-    this.cartCount.update((count) => count + 1);
+    const product = this.productData();
+    if (product) {
+      this.cartService.addToCart(product);
+    }
+  }
+
+  removeFromCart() {
+    const product = this.productData();
+    if (product) {
+      this.cartService.removeFromCart(product.id);
+    }
   }
 
   protected readonly String = String;

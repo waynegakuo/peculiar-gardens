@@ -18,10 +18,22 @@
   </div>
 
   <div class="pc-shopping-product-actions">
-    <button (click)="addToCart()" class="pg-primary-btn pg-ral-regular flex justify-center">
-      <mat-icon>add</mat-icon>
-    </button>
-  </div>
+    <div class="flex items-center gap-2">
+      <button
+        (click)="removeFromCart()"
+        [disabled]="productQuantity() === 0"
+        class="pg-secondary-btn pg-ral-regular flex justify-center items-center w-8 h-8 p-0 min-w-8"
+        [class.opacity-50]="productQuantity() === 0">
+        <mat-icon class="text-sm">remove</mat-icon>
+      </button>
 
-  <p>{{productCount()}}</p>
+      <span class="pg-mont-medium text-lg min-w-8 text-center">{{productQuantity()}}</span>
+
+      <button
+        (click)="addToCart()"
+        class="pg-primary-btn pg-ral-regular flex justify-center items-center w-8 h-8 p-0 min-w-8">
+        <mat-icon class="text-sm">add</mat-icon>
+      </button>
+    </div>
+  </div>
 </div>

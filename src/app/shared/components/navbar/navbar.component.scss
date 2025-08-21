@@ -16,6 +16,11 @@ $text-color: #828282;
   margin-bottom: auto;
 }
 
+.pg-right-navbar {
+  display: flex;
+  align-items: center;
+}
+
 .pg-left-navbar > a {
   text-decoration: none;
   letter-spacing: .3px;
