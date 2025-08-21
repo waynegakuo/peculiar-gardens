@@ -1,18 +1,63 @@
 <section>
-  <div class="pt-32">
+  <div class="p-32">
     <div class="pg-hero">
-      <h1 class="pg-mont-black pg-hero-title pg-c-primary">Shop healthy fruit and vegetables like never before</h1>
+      <h1 class="pg-mont-black pg-hero-title pg-c-primary">Fresh From Farm to Your Table</h1>
       <p class="pg-mont-light-italic pg-c-primary text-center mt-4 text-lg md:text-2xl md:mt-8">
-        Skip the Store, Get the Goodness: Fresh Produce Delivered Fast & Fresh.
+        Committed to providing the freshest, most delicious produce using sustainable farming practices that are healthy for you and the environment.
       </p>
       <div class="flex gap-4 mt-16 justify-center items-center w-full md:flex-row flex-col">
-        <button class="pg-transparent-btn pg-ral-bold">Shop Now</button>
-        <button class="pg-primary-btn pg-ral-bold">Learn More</button>
+        <button class="pg-primary-btn pg-ral-bold">Shop Fresh Produce</button>
+        <button class="pg-transparent-btn pg-ral-bold">Our Farm Story</button>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Farm Values Section -->
+<section class="bg-gray-50 py-16 md:py-24">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="pg-mont-black text-3xl md:text-5xl pg-c-primary mb-6">Why Choose Peculiar Gardens?</h2>
+      <p class="pg-ral-medium text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+        We're more than just a farm - we're stewards of the land, committed to growing food that nourishes both people and planet.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+      <div class="text-center">
+        <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+          <span class="text-2xl">🌱</span>
+        </div>
+        <h3 class="pg-mont-black text-xl md:text-2xl pg-c-primary mb-4">Sustainable Farming</h3>
+        <p class="pg-ral-medium text-gray-600">
+          We use eco-friendly practices that protect the soil, conserve water, and promote biodiversity on our farm.
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+          <span class="text-2xl">🚚</span>
+        </div>
+        <h3 class="pg-mont-black text-xl md:text-2xl pg-c-primary mb-4">Farm Fresh Delivery</h3>
+        <p class="pg-ral-medium text-gray-600">
+          From harvest to your doorstep in 24 hours or less, ensuring maximum freshness and nutritional value.
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+          <span class="text-2xl">❤️</span>
+        </div>
+        <h3 class="pg-mont-black text-xl md:text-2xl pg-c-primary mb-4">Health Focused</h3>
+        <p class="pg-ral-medium text-gray-600">
+          No harmful pesticides or chemicals - just pure, nutritious vegetables grown with care and passion.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hero Banner Section -->
 <section>
   <div class="pb-32">
     <div class="pg-hero">
@@ -20,25 +65,53 @@
         <img
           class="object-contain w-full h-full mt-8 md:mt-16 pg-banner-img"
           src="./assets/banners/hero_banner.jpg"
-          alt="Hero Banner">
+          alt="Fresh produce from Peculiar Gardens farm">
       </div>
     </div>
   </div>
 </section>
 
+<!-- Farm Story Section -->
+<section class="py-16 md:py-24 bg-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="pg-mont-black text-3xl md:text-5xl pg-c-primary mb-8">Our Farm Story</h2>
+      <div class="bg-gray-50 rounded-2xl p-8 md:p-12">
+        <blockquote class="text-lg md:text-xl text-gray-700 pg-ral-medium leading-relaxed mb-6">
+          "At Peculiar Gardens, we believe that the best produce comes from a deep respect for the land and the natural growing process.
+          Our family has been farming for three generations, and we've learned that when you care for the earth,
+          it rewards you with the most flavorful, nutritious vegetables you've ever tasted."
+        </blockquote>
+        <div class="flex items-center justify-center">
+          <div class="text-center">
+            <p class="pg-mont-black text-lg pg-c-primary">Tabitha Mwiwawi</p>
+            <p class="pg-ral-medium text-gray-600">Farm Owner</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Browse Products Section -->
 <section>
   <div class="pb-32">
     <div class="pg-browse-products">
       <div class="pg-browse-banner flex flex-col items-center">
-        <h1 class="pg-mont-black pg-hero-title pg-c-primary pt-16">Browse Product</h1>
+        <h1 class="pg-mont-black pg-hero-title pg-c-primary pt-16">Shop Fresh Produce</h1>
 
-        <p class="pg-ral-medium py-12 text-center">Discover our wide range of products, carefully curated to meet your needs.
-          From vegetables to fruits, we have everything you need to have a healthy meal, straight from the farm.</p>
+        <p class="pg-ral-medium py-12 text-center">Discover our seasonal selection of fresh vegetables, fruits, and farm products.
+          Each item is hand-picked at peak ripeness and delivered within 24 hours of harvest for maximum freshness and flavor.</p>
 
         <div class="pg-browse-products-list">
           @for (product of productMockData(); track product.id) {
             <app-product [productData]="product"></app-product>
           }
+        </div>
+
+        <!-- Call to Action -->
+        <div class="mt-12 text-center">
+          <button class="pg-primary-btn pg-ral-bold">View All Products</button>
         </div>
       </div>
     </div>

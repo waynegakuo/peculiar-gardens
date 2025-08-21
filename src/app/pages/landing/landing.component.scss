@@ -1,3 +1,4 @@
+// Container classes using existing global styles
 .pg-hero,
 .pg-browse-products,
 .pg-footer {
@@ -6,12 +7,14 @@
   margin-right: auto;
 }
 
+// Hero title - keeping for consistency with existing design
 .pg-hero-title {
   font-size: 64px;
   line-height: 76px;
   text-align: center;
 }
 
+// Browse banner styling
 .pg-browse-banner {
   background: var(--pc-bg-prime-gray);
   border-radius: 2.625rem;
@@ -24,6 +27,7 @@
   }
 }
 
+// Product grid layout
 .pg-browse-products-list {
   padding: 5px;
   display: grid;
@@ -32,6 +36,7 @@
   width: 100%;
 }
 
+// Responsive design
 @media screen and (max-width: 767.98px) {
   .pg-hero-title {
     font-size: 48px;
