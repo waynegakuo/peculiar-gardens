@@ -8,11 +8,24 @@
      alt="PG Logo">
 
     <a class="pg-ral-bold">Home</a>
-    <a class="pg-ral-bold">About</a>
-    <a class="pg-ral-bold">Services</a>
+    <a class="pg-ral-bold">Shop</a>
+    <a class="pg-ral-bold">Our Story</a>
+    <a class="pg-ral-bold">Farm Values</a>
+    <a routerLink="catalog" class="pg-ral-bold">Product Catalog</a>
   </div>
 
   <div class="pg-right-navbar">
+    <div class="relative mr-4">
+      <button class="flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">
+        <mat-icon class="text-gray-700">shopping_cart</mat-icon>
+      </button>
+      @if (cartService.totalItems() > 0) {
+        <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+          {{cartService.totalItems()}}
+        </span>
+      }
+    </div>
+
     <button class="pg-auth-btn pg-ral-bold">Login/Signup</button>
 
     <button class="pg-burger" id="burger">

@@ -153,6 +153,7 @@ export class ComponentNameComponent {
 - **Material**: Use Angular Material components with magenta-violet theme 
 - Always reuse styles defined in the global styles file and if not available, add them to the global styles file
 - Always test to ensure that the SCSS files for the different components do not exceed the maximum budgets set out
+- Also, make use of Tailwind CSS instead of having to write your own custom CSS. Only write custom CSS if necessary.
 
 ### Performance Considerations
 
